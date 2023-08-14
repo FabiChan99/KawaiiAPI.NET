@@ -15,6 +15,7 @@
     <RepositoryUrl>https://github.com/FabiChan99/KawaiiAPI.NET</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>gif-api; api; kawaii;</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
