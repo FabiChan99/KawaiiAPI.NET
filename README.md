@@ -110,7 +110,7 @@ namespace DependencyInjectionExample
 ```
 
 ## Discord Bot Example
-soon
+[here](https://github.com/FabiChan99/KawaiiAPI.NET.ExampleBot)
 
 
 ## Contributions and Issues
