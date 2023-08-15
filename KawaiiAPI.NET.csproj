@@ -7,15 +7,16 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>KawaiiAPI.NET</Title>
     <Authors>FabiChan99</Authors>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageIcon>logo.png</PackageIcon>
-    <Description>Integrate KawaiiAPI.NET effortlessly with KawaiiAPI.NET
+    <Description>Integrate the Kawaii API effortlessly with KawaiiAPI.NET
 </Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/FabiChan99/KawaiiAPI.NET</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>gif-api; api; kawaii;</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
