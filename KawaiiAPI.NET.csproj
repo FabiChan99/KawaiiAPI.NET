@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>KawaiiAPI.NET</Title>
     <Authors>FabiChan99</Authors>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <PackageIcon>logo.png</PackageIcon>
     <Description>Integrate the Kawaii API effortlessly with KawaiiAPI.NET
 </Description>
@@ -17,6 +17,7 @@
     <PackageTags>gif-api; api; kawaii;</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <SignAssembly>False</SignAssembly>
+    <PackageReleaseNotes>Added Exception handling if an improper token has passed</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
