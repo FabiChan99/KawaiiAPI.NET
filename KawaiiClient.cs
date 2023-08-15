@@ -1,10 +1,6 @@
-﻿using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
+﻿using KawaiiAPI.NET.Enums;
 using System.Security.Authentication;
 using System.Text.Json;
-using System.Threading.Tasks;
-using KawaiiAPI.NET.Enums;
 
 
 
@@ -35,7 +31,7 @@ namespace KawaiiAPI.NET
         /// <exception cref="AuthenticationException">Throws when a invalid Auth Token is provided.</exception>
         public async Task<string> GetRandomGifAsync(KawaiiGifType type)
         {
-            var response = await _httpClient.GetAsync($"{type}?token={_token}");
+            HttpResponseMessage? response = await _httpClient.GetAsync($"{type}?token={_token}");
             response.EnsureSuccessStatusCode();
             string jsonResponse = await response.Content.ReadAsStringAsync();
             using JsonDocument document = JsonDocument.Parse(jsonResponse);
@@ -49,8 +45,7 @@ namespace KawaiiAPI.NET
             }
             if (document.RootElement.TryGetProperty("response", out JsonElement responseElement))
             {
-                string? gifUrl = responseElement.GetString();
-                return gifUrl;
+                return responseElement.GetString();
             }
             else
             {
